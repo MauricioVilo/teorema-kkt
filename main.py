@@ -19,7 +19,7 @@ restricciones = ({"type": "ineq", "fun": lambda x: 2400 - x[0] - x[1]},
 
 optimizador = OptimizadorKKT(funcion_objetivo, restricciones)
 
-punto_inicio = np.array([0, 0])  # Punto de inicio
+punto_inicio = np.array([0, 0])
 x, valor_funcion = optimizador.optimizar(punto_inicio)
 
 
